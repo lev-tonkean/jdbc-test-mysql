@@ -16,10 +16,11 @@ public class jdbcTest {
         String dbPassword = null;
 
         // Get a console to run from the command line.
+        System.console().flush();
         Console console = System.console();
         if (console == null) {
             System.err.println("No console");
-//            System.exit(1);
+            System.exit(1);
         }
 
         Options commandLineOptions = new Options();
